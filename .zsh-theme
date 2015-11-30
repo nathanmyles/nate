@@ -3,9 +3,9 @@ local return_code="%(?..%{$fg[red]%}%? ↵%{$reset_color%})"
 local ret_status="%(?:%{$fg_bold[green]%}➤ :%{$fg_bold[red]%}➤ %s)"
 
 PROMPT='\
-╭─[%{$fg[cyan]%}%D{%F %T}%{$reset_color%}]\
+╭─[%{$fg[cyan]%}%D{%F %T}%{$reset_color%}] \
 %{$fg[$NCOLOR]%}%n%{$reset_color%}@%{$fg[magenta]%}%m\
-%{$reset_color%}: %{$fg[cyan]%}%~\
+%{$reset_color%}: %{$fg[cyan]%}%~ \
 $(git_prompt_info) $(git_prompt_status)%{$reset_color%}
 ╰─${ret_status}%{$reset_color%}'
 
